@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aadesh &amp; Nikita — Wedding Invitation</title>
+    <meta
+      name="description"
+      content="With love and warm regards, the Gaikwad Family invites you to celebrate the wedding festivities of Aadesh Gaikwad and Nikita Pawar on December 20, 2026."
+    />
+
+    <meta property="og:title" content="Aadesh &amp; Nikita — Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="You are warmly invited to celebrate the wedding festivities of Aadesh Gaikwad and Nikita Pawar on December 20, 2026."
+    />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235A4035'/%3E%3Ctext x='32' y='42' font-size='30' text-anchor='middle' fill='%23D4A853' font-family='serif'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/v2.css" />
+    <link rel="stylesheet" href="assets/css/v3-motion.css" />
+    <link rel="stylesheet" href="assets/css/v4-polish.css" />
+    <link rel="stylesheet" href="assets/css/v5-playback.css" />
+    <link rel="stylesheet" href="assets/css/collection-branding.css" />
+
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/v3-motion.js" defer></script>
+    <script src="assets/js/v5-playback.js" defer></script>
+    <style>
+      .bismillah, .dua, .rs-dua, .rs-arabic, [lang="ar"], [dir="rtl"] {
+        direction: ltr !important;
+        unicode-bidi: normal !important;
+      }
+
+      /* Residence & Coordination section styled in Ruby palette */
+      .coordination-section {
+        background: linear-gradient(145deg, var(--ivory), color-mix(in srgb, var(--champagne) 28%, var(--ivory)));
+      }
+      .coordination-grid {
+        display: grid;
+        gap: 24px;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      @media (min-width: 700px) {
+        .coordination-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 28px;
+        }
+      }
+      .coord-card {
+        position: relative;
+        padding: 38px 28px;
+        text-align: center;
+        background: radial-gradient(ellipse at top, rgba(255, 250, 237, 0.42), transparent 68%),
+          linear-gradient(145deg, #F6ECDD, #F1E1CB, #EAD3B4);
+        border: 1px solid #C9A35F;
+        box-shadow: 0 12px 36px rgba(58, 7, 12, 0.09);
+      }
+      .coord-card::before {
+        content: "";
+        position: absolute;
+        inset: 8px;
+        border: 1px solid color-mix(in srgb, var(--champagne) 30%, transparent);
+        pointer-events: none;
+      }
+      .coord-card h3 {
+        position: relative;
+        z-index: 1;
+        margin: 10px 0 14px;
+        font-family: var(--font-script);
+        font-size: clamp(2rem, 5vw, 2.6rem);
+        font-weight: 400;
+        line-height: 1.05;
+        color: var(--plum);
+      }
+      .coord-card p {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.06rem;
+        line-height: 1.75;
+        color: #56212a;
+      }
+      .coord-phones {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        margin-top: 6px;
+      }
+      .coord-phone-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        border: 1px solid color-mix(in srgb, var(--champagne) 70%, transparent);
+        background: rgba(255, 249, 232, 0.45);
+        color: var(--plum);
+        text-decoration: none;
+        font-family: var(--font-display);
+        font-size: 1.08rem;
+        transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+      }
+      .coord-phone-link strong {
+        font-weight: 600;
+      }
+      .coord-phone-link:hover,
+      .coord-phone-link:focus-visible {
+        background: var(--plum);
+        border-color: var(--plum);
+        color: var(--ivory);
+        transform: translateY(-2px);
+      }
+
+      /* Portrait-friendly gallery framing */
+      .gallery-slide img {
+        object-position: center 22%;
+      }
+      @media (max-width: 600px) {
+        .gallery-slide img {
+          object-position: center 20%;
+        }
+      }
+
+      /* Warm regards sign-off */
+      .closing-regards {
+        margin-top: 22px;
+        font-family: var(--font-display);
+        font-size: 1.05rem;
+        font-style: italic;
+        color: var(--plum);
+        line-height: 1.5;
+      }
+      .closing-regards strong {
+        display: block;
+        margin-top: 4px;
+        font-family: var(--font-script);
+        font-style: normal;
+        font-size: clamp(2rem, 5vw, 2.7rem);
+        font-weight: 400;
+        color: var(--mauve);
+        line-height: 1.1;
+      }
+      .welcome-regards {
+        margin-top: 18px;
+        font-family: var(--font-display);
+        font-size: 1.05rem;
+        font-style: italic;
+        color: #56212a;
+      }
+      .welcome-regards strong {
+        display: block;
+        margin-top: 4px;
+        font-family: var(--font-script);
+        font-style: normal;
+        font-size: clamp(2.1rem, 5.5vw, 3rem);
+        font-weight: 400;
+        color: var(--mauve);
+        line-height: 1.1;
+      }
+    </style>
+  </head>
+
+  <body class="intro-locked">
+    <main id="invitation">
+      <audio id="backgroundMusic" loop preload="none"></audio>
+
+      <button
+        id="musicToggle"
+        class="music-toggle"
+        type="button"
+        aria-label="Play background music"
+      >
+        <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span id="musicLabel">Music</span>
+      </button>
+
+      <section
+        id="hero"
+        class="hero is-closed"
+        role="button"
+        tabindex="0"
+        aria-label="Tap to open the wedding invitation"
+      >
+        <video id="introVideo" class="hero-video" muted playsinline preload="auto">
+          <source id="introVideoSource" type="video/mp4" />
+        </video>
+
+        <div class="hero-veil"></div>
+
+        <div id="openingMark" class="opening-mark">
+          <span class="opening-label"></span>
+          <span class="opening-ripple"></span>
+        </div>
+        <div class="v3-opening-cue" aria-hidden="true">
+          <span class="v3-opening-play"></span>
+          <span>Tap to open</span>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-divider"><span>✦</span></div>
+          <p class="hero-welcome" data-bind="copy.welcomeLine"></p>
+
+          <div class="couple-names">
+            <div>
+              <h1 id="groomName"></h1>
+              <p data-bind="couple.groom.relation"></p>
+              <small data-bind="couple.groom.parents"></small>
+            </div>
+
+            <span class="name-ampersand">&amp;</span>
+
+            <div>
+              <h1 id="brideName"></h1>
+              <p data-bind="couple.bride.relation"></p>
+              <small data-bind="couple.bride.parents"></small>
+            </div>
+          </div>
+
+          <p class="hero-invitation" data-bind="copy.invitation"></p>
+          <p class="hero-closing" data-bind="copy.heroClosing"></p>
+
+          <a class="scroll-cue" href="#welcome">
+            <span>Scroll</span>
+            <i aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section id="welcome" class="welcome-section section-pad">
+        <div class="section-shell welcome-shell">
+          <div class="welcome-copy reveal">
+            <h2 data-bind="copy.welcomeTitle"></h2>
+            <p data-bind="copy.welcomeBody"></p>
+            <div id="welcomeSignature" class="signature"></div>
+            <div class="welcome-regards">
+              <span>With Love and warm regards,</span>
+              <strong data-bind="copy.regardsFamily"></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section id="date" class="scratch-section section-pad">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">A date to hold close</span>
+            <h2 id="scratchHeading">Scratch to Reveal</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div class="scratch-frame-shell reveal">
+            <img
+              src="assets/images/scratch-frame-v2.webp"
+              alt=""
+              class="scratch-frame-overlay"
+              aria-hidden="true"
+            />
+
+            <div id="scratchCard" class="scratch-wrap">
+              <div class="date-reveal" aria-live="polite">
+                <span class="date-kicker">You're Invited!</span>
+                <strong class="date-main" data-bind="wedding.date"></strong>
+                <div class="date-day">
+                  <span data-bind="wedding.day"></span>
+                  <span aria-hidden="true"> • </span>
+                  <span data-bind="wedding.time"></span>
+                </div>
+              </div>
+
+              <canvas
+                id="scratchCanvas"
+                class="scratch-canvas"
+                role="button"
+                tabindex="0"
+                aria-label="Scratch to reveal the wedding date. Press Enter to reveal."
+              ></canvas>
+            </div>
+          </div>
+
+          <p id="scratchNote" class="scratch-note reveal">
+            Use your finger or cursor to uncover the moment.
+          </p>
+
+          <div class="cta-row">
+            <button id="saveDateBtn" class="calendar-cta" type="button" data-cal-icon hidden>
+              Add to Calendar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="gallery-section section-pad" aria-label="Gallery">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Our story</span>
+            <h2>Moments, softly held</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div id="galleryFrame" class="gallery-frame reveal">
+            <div id="gallerySlides"></div>
+            <span class="gallery-corner gallery-corner-a" aria-hidden="true"></span>
+            <span class="gallery-corner gallery-corner-b" aria-hidden="true"></span>
+          </div>
+
+          <div id="galleryDots" class="gallery-dots reveal" aria-label="Choose gallery image"></div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="countdown-section section-pad">
+        <div class="section-shell countdown-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Until we say I do</span>
+            <h2>Counting every heartbeat</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div class="countdown reveal" aria-label="Wedding countdown">
+            <div><strong id="countdownDays">00</strong><span>days</span></div>
+            <div><strong id="countdownHours">00</strong><span>hours</span></div>
+            <div><strong id="countdownMinutes">00</strong><span>minutes</span></div>
+            <div><strong id="countdownSeconds">00</strong><span>seconds</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="program-section section-pad">
+        <div class="section-shell program-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">The celebration</span>
+            <h2>Our Wedding Day</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div id="programTimeline" class="timeline reveal"></div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="venue-section section-pad">
+        <div class="section-shell">
+          <div class="venue-card reveal">
+            <span class="eyebrow">The venue</span>
+
+            <div class="venue-divider" aria-hidden="true">
+              <span>✦</span>
+            </div>
+
+            <h2 data-bind="venue.name"></h2>
+
+            <p data-bind="venue.address"></p>
+
+            <a
+              id="mapLink"
+              class="venue-map-button"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="coordination-section section-pad" aria-label="Residence and Coordination">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Family &amp; Coordination</span>
+            <h2>Home &amp; Contact</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div class="coordination-grid">
+            <div class="coord-card reveal">
+              <span class="eyebrow">Groom's Residence</span>
+              <h3>Home Address</h3>
+              <p data-bind="coordination.homeAddress"></p>
+            </div>
+
+            <div class="coord-card reveal">
+              <span class="eyebrow">For Coordination</span>
+              <h3>Reach Out</h3>
+              <div id="coordinationContacts" class="coord-phones"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="events-section section-pad">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">The Festivities</span>
+            <h2>Moments filled with joy</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div id="preWeddingEvents" class="event-list reveal"></div>
+
+          <div class="cta-row reveal">
+            <button id="addAllCal" class="calendar-cta" type="button" data-cal-icon>
+              Add all events to calendar
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <section class="gifts-section section-pad">
+        <div class="gift-bloom" aria-hidden="true"><i></i><i></i><i></i></div>
+
+        <div class="gift-copy reveal">
+          <span class="eyebrow">With all our hearts</span>
+          <h2>Your presence is our present</h2>
+          <p><span data-bind="copy.gifts"></span></p>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
+
+      <footer class="closing-section">
+        <div class="closing-arch reveal">
+          <span class="ornament light" aria-hidden="true"><i></i></span>
+
+          <p class="bismillah closing-quote" data-bind="copy.dua"></p>
+          <p class="dua-translation" data-bind="copy.duaTranslation"></p>
+
+          <h2 data-bind="copy.closing"></h2>
+          <div id="closingNames" class="closing-names"></div>
+
+          <div class="closing-regards">
+            <span>With Love and warm regards,</span>
+            <strong data-bind="copy.regardsFamily"></strong>
+          </div>
+
+          <small id="closingDetails"></small>
+        </div>
+      </footer>
+    </main>
+
+    <footer
+      class="collection-signature collection-signature--velvet"
+      aria-label="Gulnaar invitation design"
+      style="--signature-ink:#f0d4ac;--signature-paper:#381b23"
+    >
+      <span class="collection-signature__rule" aria-hidden="true"></span>
+      <span class="collection-signature__name">Gulnaar</span>
+      <span class="collection-signature__line">A celebration in velvet</span>
+    </footer>
+  </body>
+</html>
